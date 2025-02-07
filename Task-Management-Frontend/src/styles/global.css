@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar {
+    width: 200px;
+    background: #f4f4f4;
+    height: 100vh;
+    padding: 20px;
+}
+
+button {
+    cursor: pointer;
+    margin-left: 10px;
+}

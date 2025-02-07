@@ -1,0 +1,24 @@
+.task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.custom-btn {
+    background-color: #673ab7 !important;
+    color: #fff !important;
+    font-weight: bold;
+    text-transform: none;
+    /* padding: 10px 20px; */
+    font-size: 13px !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* height: fit-content; */
+    height: 3rem;
+    width: 50%;
+}
+
+.custom-btn:hover {
+    background-color: #5e35b1 !important;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}

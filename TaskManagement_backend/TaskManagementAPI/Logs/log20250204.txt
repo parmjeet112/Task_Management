@@ -1,0 +1,485 @@
+2025-02-04 20:25:01.607 +05:30 [INF] Now listening on: http://localhost:5144
+2025-02-04 20:25:01.651 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-04 20:25:01.653 +05:30 [INF] Hosting environment: Development
+2025-02-04 20:25:01.655 +05:30 [INF] Content root path: C:\Users\Sohan\Documents\TaskManagementAPI\TaskManagementAPI
+2025-02-04 20:25:01.746 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/index.html - null null
+2025-02-04 20:25:01.773 +05:30 [INF] Incoming Request: GET /swagger/index.html
+2025-02-04 20:25:01.966 +05:30 [INF] Outgoing Response: 200
+2025-02-04 20:25:01.973 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/index.html - 200 null text/html;charset=utf-8 226.5251ms
+2025-02-04 20:25:02.009 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/index.js - null null
+2025-02-04 20:25:02.015 +05:30 [INF] Incoming Request: GET /swagger/index.js
+2025-02-04 20:25:02.022 +05:30 [INF] Outgoing Response: 200
+2025-02-04 20:25:02.024 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/index.js - 200 null application/javascript;charset=utf-8 17.6108ms
+2025-02-04 20:25:02.135 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/v1/swagger.json - null null
+2025-02-04 20:25:02.139 +05:30 [INF] Incoming Request: GET /swagger/v1/swagger.json
+2025-02-04 20:25:02.266 +05:30 [INF] Outgoing Response: 200
+2025-02-04 20:25:02.267 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 132.2142ms
+2025-02-04 20:26:18.175 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5144/api/Task - application/json 214
+2025-02-04 20:26:18.182 +05:30 [INF] Incoming Request: POST /api/Task
+2025-02-04 20:26:18.189 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI)'
+2025-02-04 20:26:18.216 +05:30 [INF] Route matched with {action = "Create", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(TaskManagementAPI.Models.Task) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-04 20:26:18.629 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-02-04 20:26:18.679 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI) in 457.9506ms
+2025-02-04 20:26:18.681 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI)'
+2025-02-04 20:26:18.683 +05:30 [INF] Outgoing Response: 400
+2025-02-04 20:26:18.687 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5144/api/Task - 400 null application/problem+json; charset=utf-8 513.708ms
+2025-02-04 20:42:05.091 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5144/api/Task - application/json 214
+2025-02-04 20:42:05.100 +05:30 [INF] Incoming Request: POST /api/Task
+2025-02-04 20:42:05.104 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI)'
+2025-02-04 20:42:05.107 +05:30 [INF] Route matched with {action = "Create", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(TaskManagementAPI.Models.Task) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-04 20:42:05.153 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-02-04 20:42:05.157 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI) in 43.9374ms
+2025-02-04 20:42:05.160 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI)'
+2025-02-04 20:42:05.161 +05:30 [INF] Outgoing Response: 400
+2025-02-04 20:42:05.162 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5144/api/Task - 400 null application/problem+json; charset=utf-8 71.809ms
+2025-02-04 20:42:23.934 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/index.html - null null
+2025-02-04 20:42:23.946 +05:30 [INF] Incoming Request: GET /swagger/index.html
+2025-02-04 20:42:23.950 +05:30 [INF] Outgoing Response: 200
+2025-02-04 20:42:23.953 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/index.html - 200 null text/html;charset=utf-8 19.8177ms
+2025-02-04 20:42:24.178 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/index.js - null null
+2025-02-04 20:42:24.190 +05:30 [INF] Incoming Request: GET /swagger/index.js
+2025-02-04 20:42:24.193 +05:30 [INF] Outgoing Response: 200
+2025-02-04 20:42:24.197 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/index.js - 200 null application/javascript;charset=utf-8 18.3842ms
+2025-02-04 20:42:24.270 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/v1/swagger.json - null null
+2025-02-04 20:42:24.275 +05:30 [INF] Incoming Request: GET /swagger/v1/swagger.json
+2025-02-04 20:42:24.287 +05:30 [INF] Outgoing Response: 200
+2025-02-04 20:42:24.289 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 18.6887ms
+2025-02-04 20:42:31.914 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5144/api/Task - application/json 213
+2025-02-04 20:42:31.922 +05:30 [INF] Incoming Request: POST /api/Task
+2025-02-04 20:42:31.926 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI)'
+2025-02-04 20:42:31.931 +05:30 [INF] Route matched with {action = "Create", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(TaskManagementAPI.Models.Task) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-04 20:42:31.939 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-02-04 20:42:31.942 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI) in 6.6311ms
+2025-02-04 20:42:31.944 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI)'
+2025-02-04 20:42:31.946 +05:30 [INF] Outgoing Response: 400
+2025-02-04 20:42:31.947 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5144/api/Task - 400 null application/problem+json; charset=utf-8 32.5556ms
+2025-02-04 20:43:48.479 +05:30 [INF] Now listening on: http://localhost:5144
+2025-02-04 20:43:48.516 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-04 20:43:48.518 +05:30 [INF] Hosting environment: Development
+2025-02-04 20:43:48.520 +05:30 [INF] Content root path: C:\Users\Sohan\Documents\TaskManagementAPI\TaskManagementAPI
+2025-02-04 20:43:49.134 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/index.html - null null
+2025-02-04 20:43:49.174 +05:30 [INF] Incoming Request: GET /swagger/index.html
+2025-02-04 20:43:49.348 +05:30 [INF] Outgoing Response: 200
+2025-02-04 20:43:49.352 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/index.html - 200 null text/html;charset=utf-8 221.6286ms
+2025-02-04 20:43:49.374 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/index.js - null null
+2025-02-04 20:43:49.382 +05:30 [INF] Incoming Request: GET /swagger/index.js
+2025-02-04 20:43:49.386 +05:30 [INF] Outgoing Response: 200
+2025-02-04 20:43:49.388 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/index.js - 200 null application/javascript;charset=utf-8 15.3844ms
+2025-02-04 20:43:49.616 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/v1/swagger.json - null null
+2025-02-04 20:43:49.618 +05:30 [INF] Incoming Request: GET /swagger/v1/swagger.json
+2025-02-04 20:43:49.744 +05:30 [INF] Outgoing Response: 200
+2025-02-04 20:43:49.745 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 129.6367ms
+2025-02-04 20:43:57.898 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5144/api/Task - application/json 213
+2025-02-04 20:43:57.906 +05:30 [INF] Incoming Request: POST /api/Task
+2025-02-04 20:43:57.917 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI)'
+2025-02-04 20:43:57.960 +05:30 [INF] Route matched with {action = "Create", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(TaskManagementAPI.Models.Task) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-04 20:43:58.350 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-02-04 20:43:58.399 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI) in 431.3237ms
+2025-02-04 20:43:58.400 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI)'
+2025-02-04 20:43:58.403 +05:30 [INF] Outgoing Response: 400
+2025-02-04 20:43:58.408 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5144/api/Task - 400 null application/problem+json; charset=utf-8 509.7568ms
+2025-02-04 20:44:40.776 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/index.html - null null
+2025-02-04 20:44:40.778 +05:30 [INF] Incoming Request: GET /swagger/index.html
+2025-02-04 20:44:40.780 +05:30 [INF] Outgoing Response: 200
+2025-02-04 20:44:40.780 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/index.html - 200 null text/html;charset=utf-8 4.2416ms
+2025-02-04 20:44:40.972 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/index.js - null null
+2025-02-04 20:44:40.976 +05:30 [INF] Incoming Request: GET /swagger/index.js
+2025-02-04 20:44:40.978 +05:30 [INF] Outgoing Response: 200
+2025-02-04 20:44:40.980 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/index.js - 200 null application/javascript;charset=utf-8 7.4711ms
+2025-02-04 20:44:41.052 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/v1/swagger.json - null null
+2025-02-04 20:44:41.054 +05:30 [INF] Incoming Request: GET /swagger/v1/swagger.json
+2025-02-04 20:44:41.061 +05:30 [INF] Outgoing Response: 200
+2025-02-04 20:44:41.063 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 10.1612ms
+2025-02-04 20:45:03.274 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5144/api/Task - application/json 214
+2025-02-04 20:45:03.278 +05:30 [INF] Incoming Request: POST /api/Task
+2025-02-04 20:45:03.280 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI)'
+2025-02-04 20:45:03.283 +05:30 [INF] Route matched with {action = "Create", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(TaskManagementAPI.Models.Task) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-04 20:45:03.340 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI) - Validation state: "Valid"
+2025-02-04 20:45:09.695 +05:30 [INF] Executed DbCommand (229ms) [Parameters=[@__task_CategoryId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c0].[Id], [c0].[Name], [t].[Id], [t].[CategoryId], [t].[Description], [t].[IsCompleted], [t].[Title]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[Name]
+    FROM [Categories] AS [c]
+    WHERE [c].[Id] = @__task_CategoryId_0
+) AS [c0]
+LEFT JOIN [Tasks] AS [t] ON [c0].[Id] = [t].[CategoryId]
+ORDER BY [c0].[Id]
+2025-02-04 20:45:10.930 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI) in 7644.6141ms
+2025-02-04 20:45:11.068 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI)'
+2025-02-04 20:45:11.658 +05:30 [ERR] Unhandled Exception
+System.InvalidOperationException: Category not found.
+   at TaskManagementAPI.Repositories.TaskRepository.AddTaskAsync(Task task)
+   at TaskManagementAPI.Controllers.TaskController.Create(Task task)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at TaskManagementAPI.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+2025-02-04 20:45:11.767 +05:30 [INF] Outgoing Response: 500
+2025-02-04 20:45:11.791 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5144/api/Task - 500 null application/json 8517.095ms
+2025-02-04 20:51:27.542 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/index.html - null null
+2025-02-04 20:51:27.550 +05:30 [INF] Incoming Request: GET /swagger/index.html
+2025-02-04 20:51:27.552 +05:30 [INF] Outgoing Response: 200
+2025-02-04 20:51:27.555 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/index.html - 200 null text/html;charset=utf-8 14.2673ms
+2025-02-04 20:51:27.737 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/index.js - null null
+2025-02-04 20:51:27.741 +05:30 [INF] Incoming Request: GET /swagger/index.js
+2025-02-04 20:51:27.742 +05:30 [INF] Outgoing Response: 200
+2025-02-04 20:51:27.743 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/index.js - 200 null application/javascript;charset=utf-8 6.202ms
+2025-02-04 20:51:27.821 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/v1/swagger.json - null null
+2025-02-04 20:51:27.824 +05:30 [INF] Incoming Request: GET /swagger/v1/swagger.json
+2025-02-04 20:51:27.831 +05:30 [INF] Outgoing Response: 200
+2025-02-04 20:51:27.834 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 12.8308ms
+2025-02-04 20:51:38.032 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5144/api/Task - application/json 214
+2025-02-04 20:51:38.036 +05:30 [INF] Incoming Request: POST /api/Task
+2025-02-04 20:51:38.037 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI)'
+2025-02-04 20:51:38.038 +05:30 [INF] Route matched with {action = "Create", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(TaskManagementAPI.Models.Task) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-04 20:51:38.047 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI) - Validation state: "Valid"
+2025-02-04 20:51:38.176 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[@__task_CategoryId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [c0].[Id], [c0].[Name], [t].[Id], [t].[CategoryId], [t].[Description], [t].[IsCompleted], [t].[Title]
+FROM (
+    SELECT TOP(1) [c].[Id], [c].[Name]
+    FROM [Categories] AS [c]
+    WHERE [c].[Id] = @__task_CategoryId_0
+) AS [c0]
+LEFT JOIN [Tasks] AS [t] ON [c0].[Id] = [t].[CategoryId]
+ORDER BY [c0].[Id]
+2025-02-04 20:51:38.699 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0);
+2025-02-04 20:51:38.864 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Tasks] ([CategoryId], [Description], [IsCompleted], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2025-02-04 20:51:38.890 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 830.2914ms.
+2025-02-04 20:51:38.895 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'TaskManagementAPI.Models.Task'.
+2025-02-04 20:51:39.610 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI) in 1569.2127ms
+2025-02-04 20:51:39.745 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI)'
+2025-02-04 20:51:40.305 +05:30 [ERR] Unhandled Exception
+System.Text.Json.JsonException: A possible object cycle was detected. This can either be due to a cycle or if the object depth is larger than the maximum allowed depth of 32. Consider using ReferenceHandler.Preserve on JsonSerializerOptions to support cycles. Path: $.Category.Tasks.Category.Tasks.Category.Tasks.Category.Tasks.Category.Tasks.Category.Tasks.Category.Tasks.Category.Tasks.Category.Tasks.Category.Tasks.Category.Id.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_SerializerCycleDetected(Int32 maxDepth)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IEnumerableDefaultConverter`2.OnWriteResume(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1.GetMemberAndWriteJson(Object obj, WriteStack& state, Utf8JsonWriter writer)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryWrite(Utf8JsonWriter writer, T value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.SerializeAsync(PipeWriter pipeWriter, T rootValue, Int32 flushThreshold, CancellationToken cancellationToken, Object rootValueBoxed)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at TaskManagementAPI.Middleware.ExceptionHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+2025-02-04 20:51:40.358 +05:30 [INF] Outgoing Response: 500
+2025-02-04 20:51:40.361 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5144/api/Task - 500 null application/json 2328.5588ms
+2025-02-04 21:10:29.979 +05:30 [INF] Now listening on: http://localhost:5144
+2025-02-04 21:10:30.033 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-04 21:10:30.038 +05:30 [INF] Hosting environment: Development
+2025-02-04 21:10:30.041 +05:30 [INF] Content root path: C:\Users\Sohan\Documents\TaskManagementAPI\TaskManagementAPI
+2025-02-04 21:10:30.622 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/index.html - null null
+2025-02-04 21:10:30.657 +05:30 [INF] Incoming Request: GET /swagger/index.html
+2025-02-04 21:10:30.857 +05:30 [INF] Outgoing Response: 200
+2025-02-04 21:10:30.860 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/index.html - 200 null text/html;charset=utf-8 242.6326ms
+2025-02-04 21:10:30.883 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/index.js - null null
+2025-02-04 21:10:30.892 +05:30 [INF] Incoming Request: GET /swagger/index.js
+2025-02-04 21:10:30.897 +05:30 [INF] Outgoing Response: 200
+2025-02-04 21:10:30.899 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/index.js - 200 null application/javascript;charset=utf-8 18.9797ms
+2025-02-04 21:10:31.014 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/v1/swagger.json - null null
+2025-02-04 21:10:31.020 +05:30 [INF] Incoming Request: GET /swagger/v1/swagger.json
+2025-02-04 21:10:31.164 +05:30 [INF] Outgoing Response: 200
+2025-02-04 21:10:31.166 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 151.8857ms
+2025-02-04 21:10:44.657 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5144/api/Task - application/json 214
+2025-02-04 21:10:44.664 +05:30 [INF] Incoming Request: POST /api/Task
+2025-02-04 21:10:44.678 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI)'
+2025-02-04 21:10:44.744 +05:30 [INF] Route matched with {action = "Create", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(TaskManagementAPI.Models.Task) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-04 21:10:45.447 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI) - Validation state: "Valid"
+2025-02-04 21:10:49.047 +05:30 [INF] Executed DbCommand (154ms) [Parameters=[@__task_CategoryId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__task_CategoryId_0
+2025-02-04 21:10:49.580 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Tasks] ([CategoryId], [Description], [IsCompleted], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2025-02-04 21:10:49.667 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 4207.3869ms.
+2025-02-04 21:10:49.699 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'TaskManagementAPI.Models.Task'.
+2025-02-04 21:10:49.794 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI) in 5036.566ms
+2025-02-04 21:10:49.798 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI)'
+2025-02-04 21:10:49.810 +05:30 [INF] Outgoing Response: 201
+2025-02-04 21:10:49.835 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5144/api/Task - 201 null application/json; charset=utf-8 5178.0068ms
+2025-02-04 21:44:45.234 +05:30 [INF] Now listening on: http://localhost:5144
+2025-02-04 21:44:45.272 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-04 21:44:45.274 +05:30 [INF] Hosting environment: Development
+2025-02-04 21:44:45.275 +05:30 [INF] Content root path: C:\Users\Sohan\Documents\TaskManagementAPI\TaskManagementAPI
+2025-02-04 21:44:45.775 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/index.html - null null
+2025-02-04 21:44:45.811 +05:30 [INF] Incoming Request: GET /swagger/index.html
+2025-02-04 21:44:46.079 +05:30 [INF] Outgoing Response: 200
+2025-02-04 21:44:46.082 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/index.html - 200 null text/html;charset=utf-8 309.6216ms
+2025-02-04 21:44:46.130 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/index.js - null null
+2025-02-04 21:44:46.138 +05:30 [INF] Incoming Request: GET /swagger/index.js
+2025-02-04 21:44:46.143 +05:30 [INF] Outgoing Response: 200
+2025-02-04 21:44:46.144 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/index.js - 200 null application/javascript;charset=utf-8 15.5614ms
+2025-02-04 21:44:46.371 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/v1/swagger.json - null null
+2025-02-04 21:44:46.378 +05:30 [INF] Incoming Request: GET /swagger/v1/swagger.json
+2025-02-04 21:44:46.590 +05:30 [INF] Outgoing Response: 200
+2025-02-04 21:44:46.592 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 220.1033ms
+2025-02-04 21:47:28.270 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5144/api/Task/category - application/json 20
+2025-02-04 21:47:28.280 +05:30 [INF] Incoming Request: POST /api/Task/category
+2025-02-04 21:47:28.293 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.AddCategory (TaskManagementAPI)'
+2025-02-04 21:47:28.353 +05:30 [INF] Route matched with {action = "AddCategory", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddCategory(TaskManagementAPI.DTOs.CategoryDto) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-04 21:47:29.051 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.AddCategory (TaskManagementAPI) - Validation state: "Valid"
+2025-02-04 21:47:32.486 +05:30 [INF] Executed DbCommand (155ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0);
+2025-02-04 21:47:32.656 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.AddCategory (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 3588.2737ms.
+2025-02-04 21:47:32.696 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-04 21:47:32.785 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.AddCategory (TaskManagementAPI) in 4419.5226ms
+2025-02-04 21:47:32.788 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.AddCategory (TaskManagementAPI)'
+2025-02-04 21:47:32.798 +05:30 [INF] Outgoing Response: 201
+2025-02-04 21:47:32.824 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5144/api/Task/category - 201 null application/json; charset=utf-8 4554.4077ms
+2025-02-04 21:48:00.438 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/2 - null null
+2025-02-04 21:48:00.452 +05:30 [INF] Incoming Request: GET /api/Task/category/2
+2025-02-04 21:48:00.456 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-04 21:48:00.471 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-04 21:48:00.500 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-04 21:48:01.425 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-04 21:48:01.472 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 967.6837ms.
+2025-02-04 21:48:01.478 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-04 21:48:01.482 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 1000.9136ms
+2025-02-04 21:48:01.486 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-04 21:48:01.487 +05:30 [INF] Outgoing Response: 200
+2025-02-04 21:48:01.488 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/2 - 200 null application/json; charset=utf-8 1050.1681ms
+2025-02-04 21:49:41.247 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5144/api/Task - application/json 101
+2025-02-04 21:49:41.259 +05:30 [INF] Incoming Request: POST /api/Task
+2025-02-04 21:49:41.262 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI)'
+2025-02-04 21:49:41.269 +05:30 [INF] Route matched with {action = "Create", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(TaskManagementAPI.DTOs.TaskDto) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-04 21:49:41.311 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI) - Validation state: "Valid"
+2025-02-04 21:49:41.379 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[@__taskDto_CategoryId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__taskDto_CategoryId_0
+2025-02-04 21:49:41.467 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Tasks] ([CategoryId], [Description], [IsCompleted], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2025-02-04 21:49:41.480 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 163.4006ms.
+2025-02-04 21:49:41.484 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'TaskManagementAPI.Models.Task'.
+2025-02-04 21:49:41.502 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI) in 227.9908ms
+2025-02-04 21:49:41.507 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI)'
+2025-02-04 21:49:41.510 +05:30 [INF] Outgoing Response: 201
+2025-02-04 21:49:41.512 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5144/api/Task - 201 null application/json; charset=utf-8 265.5941ms
+2025-02-04 21:50:08.122 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task - null null
+2025-02-04 21:50:08.126 +05:30 [INF] Incoming Request: GET /api/Task
+2025-02-04 21:50:08.133 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetAll (TaskManagementAPI)'
+2025-02-04 21:50:08.143 +05:30 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-04 21:50:08.152 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetAll (TaskManagementAPI) - Validation state: "Valid"
+2025-02-04 21:50:08.399 +05:30 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[Description], [t].[IsCompleted], [t].[Title], [c].[Id], [c].[Name]
+FROM [Tasks] AS [t]
+INNER JOIN [Categories] AS [c] ON [t].[CategoryId] = [c].[Id]
+2025-02-04 21:50:08.416 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetAll (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 260.2499ms.
+2025-02-04 21:50:08.418 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagementAPI.Models.Task, TaskManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-04 21:50:08.432 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetAll (TaskManagementAPI) in 280.7041ms
+2025-02-04 21:50:08.433 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetAll (TaskManagementAPI)'
+2025-02-04 21:50:08.434 +05:30 [INF] Outgoing Response: 200
+2025-02-04 21:50:08.436 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task - 200 null application/json; charset=utf-8 313.9682ms
+2025-02-04 21:50:22.397 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/3 - null null
+2025-02-04 21:50:22.401 +05:30 [INF] Incoming Request: GET /api/Task/3
+2025-02-04 21:50:22.403 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetById (TaskManagementAPI)'
+2025-02-04 21:50:22.414 +05:30 [INF] Route matched with {action = "GetById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-04 21:50:22.421 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-04 21:50:22.495 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CategoryId], [t].[Description], [t].[IsCompleted], [t].[Title]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__p_0
+2025-02-04 21:50:22.498 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 73.8193ms.
+2025-02-04 21:50:22.502 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Task'.
+2025-02-04 21:50:22.507 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetById (TaskManagementAPI) in 87.6803ms
+2025-02-04 21:50:22.510 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetById (TaskManagementAPI)'
+2025-02-04 21:50:22.511 +05:30 [INF] Outgoing Response: 200
+2025-02-04 21:50:22.513 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/3 - 200 null application/json; charset=utf-8 115.9571ms
+2025-02-04 21:59:18.276 +05:30 [INF] Now listening on: http://localhost:5144
+2025-02-04 21:59:18.313 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-04 21:59:18.314 +05:30 [INF] Hosting environment: Development
+2025-02-04 21:59:18.315 +05:30 [INF] Content root path: C:\Users\Sohan\Documents\TaskManagementAPI\TaskManagementAPI
+2025-02-04 21:59:18.844 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/index.html - null null
+2025-02-04 21:59:18.887 +05:30 [INF] Incoming Request: GET /swagger/index.html
+2025-02-04 21:59:19.092 +05:30 [INF] Outgoing Response: 200
+2025-02-04 21:59:19.098 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/index.html - 200 null text/html;charset=utf-8 256.7298ms
+2025-02-04 21:59:19.123 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/index.js - null null
+2025-02-04 21:59:19.130 +05:30 [INF] Incoming Request: GET /swagger/index.js
+2025-02-04 21:59:19.134 +05:30 [INF] Outgoing Response: 200
+2025-02-04 21:59:19.136 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/index.js - 200 null application/javascript;charset=utf-8 15.6358ms
+2025-02-04 21:59:19.255 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/v1/swagger.json - null null
+2025-02-04 21:59:19.259 +05:30 [INF] Incoming Request: GET /swagger/v1/swagger.json
+2025-02-04 21:59:19.375 +05:30 [INF] Outgoing Response: 200
+2025-02-04 21:59:19.376 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 121.2198ms
+2025-02-04 22:00:16.243 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5144/api/Task/3 - application/json 105
+2025-02-04 22:00:16.253 +05:30 [INF] Incoming Request: PUT /api/Task/3
+2025-02-04 22:00:16.263 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.Update (TaskManagementAPI)'
+2025-02-04 22:00:16.321 +05:30 [INF] Route matched with {action = "Update", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, TaskManagementAPI.DTOs.TaskDto) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-04 22:00:16.998 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.Update (TaskManagementAPI) - Validation state: "Valid"
+2025-02-04 22:00:20.877 +05:30 [INF] Executed DbCommand (177ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CategoryId], [t].[Description], [t].[IsCompleted], [t].[Title]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__p_0
+2025-02-04 22:00:21.428 +05:30 [INF] Executed DbCommand (28ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Tasks] SET [CategoryId] = @p0, [Description] = @p1, [IsCompleted] = @p2, [Title] = @p3
+OUTPUT 1
+WHERE [Id] = @p4;
+2025-02-04 22:00:21.497 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.Update (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 4482.5606ms.
+2025-02-04 22:00:21.531 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-02-04 22:00:21.551 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.Update (TaskManagementAPI) in 5210.3879ms
+2025-02-04 22:00:21.556 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.Update (TaskManagementAPI)'
+2025-02-04 22:00:21.567 +05:30 [INF] Outgoing Response: 204
+2025-02-04 22:00:21.602 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5144/api/Task/3 - 204 null null 5358.4972ms
+2025-02-04 22:01:33.138 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5144/api/Task/3 - null null
+2025-02-04 22:01:33.147 +05:30 [INF] Incoming Request: DELETE /api/Task/3
+2025-02-04 22:01:33.148 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.Delete (TaskManagementAPI)'
+2025-02-04 22:01:33.153 +05:30 [INF] Route matched with {action = "Delete", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-04 22:01:33.156 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.Delete (TaskManagementAPI) - Validation state: "Valid"
+2025-02-04 22:01:33.183 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CategoryId], [t].[Description], [t].[IsCompleted], [t].[Title]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__p_0
+2025-02-04 22:01:33.201 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Tasks]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-02-04 22:01:33.206 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.Delete (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 49.2455ms.
+2025-02-04 22:01:33.207 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-02-04 22:01:33.208 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.Delete (TaskManagementAPI) in 53.981ms
+2025-02-04 22:01:33.209 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.Delete (TaskManagementAPI)'
+2025-02-04 22:01:33.210 +05:30 [INF] Outgoing Response: 204
+2025-02-04 22:01:33.211 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5144/api/Task/3 - 204 null null 73.6853ms

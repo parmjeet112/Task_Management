@@ -1,0 +1,24 @@
+.home {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home h1 {
+    font-size: 44px;
+    color: #0c0c4a;
+    /* background: linear-gradient(to right, #ff758c, #ff7eb3); */
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    margin: 0 0 1.5rem 0;
+}
+
+.home p {
+    font-size: 18px;
+    margin: 0 0 0 0;
+    color: #3e3ea9;
+    font-weight: 500;
+}

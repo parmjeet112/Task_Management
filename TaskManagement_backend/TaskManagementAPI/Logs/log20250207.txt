@@ -1,0 +1,1056 @@
+2025-02-07 00:27:40.171 +05:30 [INF] Now listening on: http://localhost:5144
+2025-02-07 00:27:40.291 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-02-07 00:27:40.294 +05:30 [INF] Hosting environment: Development
+2025-02-07 00:27:40.296 +05:30 [INF] Content root path: C:\Users\Sohan\Documents\TaskManagement\TaskManagementAPI
+2025-02-07 00:27:40.304 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/index.html - null null
+2025-02-07 00:27:40.348 +05:30 [INF] Incoming Request: GET /swagger/index.html
+2025-02-07 00:27:40.682 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:27:40.691 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/index.html - 200 null text/html;charset=utf-8 388.9756ms
+2025-02-07 00:27:41.844 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/index.js - null null
+2025-02-07 00:27:41.852 +05:30 [INF] Incoming Request: GET /swagger/index.js
+2025-02-07 00:27:41.855 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:27:41.856 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/index.js - 200 null application/javascript;charset=utf-8 14.4514ms
+2025-02-07 00:27:42.431 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/swagger/v1/swagger.json - null null
+2025-02-07 00:27:42.436 +05:30 [INF] Incoming Request: GET /swagger/v1/swagger.json
+2025-02-07 00:27:42.579 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:27:42.585 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 150.3212ms
+2025-02-07 00:28:35.069 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task - null null
+2025-02-07 00:28:35.080 +05:30 [INF] Incoming Request: GET /api/Task
+2025-02-07 00:28:35.097 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:28:35.118 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetAll (TaskManagementAPI)'
+2025-02-07 00:28:35.182 +05:30 [INF] Route matched with {action = "GetAll", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:28:35.797 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetAll (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:28:40.156 +05:30 [INF] Executed DbCommand (130ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryId], [t].[Description], [t].[IsCompleted], [t].[Title]
+FROM [Tasks] AS [t]
+2025-02-07 00:28:40.454 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetAll (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 4642.5615ms.
+2025-02-07 00:28:40.489 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagementAPI.Models.Task, TaskManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-07 00:28:40.669 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetAll (TaskManagementAPI) in 5472.5793ms
+2025-02-07 00:28:40.673 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetAll (TaskManagementAPI)'
+2025-02-07 00:28:40.681 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:28:40.709 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task - 200 null application/json; charset=utf-8 5639.4805ms
+2025-02-07 00:28:49.677 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1002 - null null
+2025-02-07 00:28:49.683 +05:30 [INF] Incoming Request: GET /api/Task/category/1002
+2025-02-07 00:28:49.686 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:28:49.688 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:28:49.716 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:28:49.749 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:28:50.195 +05:30 [INF] Executed DbCommand (99ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:28:50.229 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 476.7988ms.
+2025-02-07 00:28:50.237 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:28:50.247 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 526.2972ms
+2025-02-07 00:28:50.256 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:28:50.259 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:28:50.265 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1002 - 200 null application/json; charset=utf-8 587.2927ms
+2025-02-07 00:28:50.274 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - null null
+2025-02-07 00:28:50.288 +05:30 [INF] Incoming Request: GET /api/Task/category/1004
+2025-02-07 00:28:50.291 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:28:50.293 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:28:50.298 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:28:50.309 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:28:50.398 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:28:50.406 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 90.1949ms.
+2025-02-07 00:28:50.413 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:28:50.423 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 120.8912ms
+2025-02-07 00:28:50.431 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:28:50.437 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:28:50.442 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - 200 null application/json; charset=utf-8 167.7622ms
+2025-02-07 00:28:50.455 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - null null
+2025-02-07 00:28:50.464 +05:30 [INF] Incoming Request: GET /api/Task/category/1
+2025-02-07 00:28:50.467 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:28:50.470 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:28:50.473 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:28:50.479 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:28:50.495 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:28:50.502 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 19.4259ms.
+2025-02-07 00:28:50.506 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:28:50.511 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 32.6784ms
+2025-02-07 00:28:50.515 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:28:50.517 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:28:50.519 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - 200 null application/json; charset=utf-8 63.8916ms
+2025-02-07 00:29:00.490 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category - null null
+2025-02-07 00:29:00.501 +05:30 [INF] Incoming Request: GET /api/Task/category
+2025-02-07 00:29:00.504 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:29:00.506 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI)'
+2025-02-07 00:29:00.519 +05:30 [INF] Route matched with {action = "GetAllCategories", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategories() on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:29:00.525 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:29:00.550 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+2025-02-07 00:29:00.554 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 27.2465ms.
+2025-02-07 00:29:00.556 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagementAPI.Models.Category, TaskManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-07 00:29:00.563 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI) in 38.7426ms
+2025-02-07 00:29:00.565 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI)'
+2025-02-07 00:29:00.567 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:29:00.568 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category - 200 null application/json; charset=utf-8 77.5041ms
+2025-02-07 00:29:03.076 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1002 - null null
+2025-02-07 00:29:03.083 +05:30 [INF] Incoming Request: GET /api/Task/category/1002
+2025-02-07 00:29:03.086 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:29:03.090 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:29:03.094 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:29:03.105 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:29:03.121 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:29:03.127 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 19.4583ms.
+2025-02-07 00:29:03.132 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:29:03.135 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 33.992ms
+2025-02-07 00:29:03.138 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:29:03.139 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:29:03.141 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1002 - 200 null application/json; charset=utf-8 65.2746ms
+2025-02-07 00:29:03.145 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - null null
+2025-02-07 00:29:03.148 +05:30 [INF] Incoming Request: GET /api/Task/category/1004
+2025-02-07 00:29:03.149 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:29:03.150 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:29:03.151 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:29:03.154 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:29:03.161 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:29:03.165 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.665ms.
+2025-02-07 00:29:03.168 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:29:03.170 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 16.8878ms
+2025-02-07 00:29:03.173 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:29:03.175 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:29:03.177 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - 200 null application/json; charset=utf-8 31.8843ms
+2025-02-07 00:29:03.181 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - null null
+2025-02-07 00:29:03.184 +05:30 [INF] Incoming Request: GET /api/Task/category/1
+2025-02-07 00:29:03.185 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:29:03.186 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:29:03.188 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:29:03.191 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:29:03.197 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:29:03.201 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.3307ms.
+2025-02-07 00:29:03.205 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:29:03.207 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 16.5917ms
+2025-02-07 00:29:03.209 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:29:03.211 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:29:03.213 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - 200 null application/json; charset=utf-8 31.6062ms
+2025-02-07 00:29:05.162 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/6 - null null
+2025-02-07 00:29:05.164 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category - null null
+2025-02-07 00:29:05.174 +05:30 [INF] Incoming Request: GET /api/Task/6
+2025-02-07 00:29:05.183 +05:30 [INF] Incoming Request: GET /api/Task/category
+2025-02-07 00:29:05.185 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:29:05.187 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:29:05.189 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetById (TaskManagementAPI)'
+2025-02-07 00:29:05.191 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI)'
+2025-02-07 00:29:05.195 +05:30 [INF] Route matched with {action = "GetAllCategories", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategories() on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:29:05.200 +05:30 [INF] Route matched with {action = "GetById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:29:05.202 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:29:05.207 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:29:05.228 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+2025-02-07 00:29:05.234 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 24.0196ms.
+2025-02-07 00:29:05.238 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagementAPI.Models.Category, TaskManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-07 00:29:05.242 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI) in 41.2628ms
+2025-02-07 00:29:05.245 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI)'
+2025-02-07 00:29:05.247 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:29:05.249 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category - 200 null application/json; charset=utf-8 84.5141ms
+2025-02-07 00:29:05.336 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CategoryId], [t].[Description], [t].[IsCompleted], [t].[Title]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__p_0
+2025-02-07 00:29:05.341 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 128.3584ms.
+2025-02-07 00:29:05.346 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Task'.
+2025-02-07 00:29:05.350 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetById (TaskManagementAPI) in 143.7996ms
+2025-02-07 00:29:05.355 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetById (TaskManagementAPI)'
+2025-02-07 00:29:05.359 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:29:05.363 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/6 - 200 null application/json; charset=utf-8 201.1159ms
+2025-02-07 00:29:07.536 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1002 - null null
+2025-02-07 00:29:07.544 +05:30 [INF] Incoming Request: GET /api/Task/category/1002
+2025-02-07 00:29:07.547 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:29:07.548 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:29:07.552 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:29:07.557 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:29:07.579 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:29:07.585 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 25.4704ms.
+2025-02-07 00:29:07.589 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:29:07.593 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 36.7897ms
+2025-02-07 00:29:07.595 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:29:07.596 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:29:07.598 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1002 - 200 null application/json; charset=utf-8 61.3127ms
+2025-02-07 00:29:07.601 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - null null
+2025-02-07 00:29:07.605 +05:30 [INF] Incoming Request: GET /api/Task/category/1004
+2025-02-07 00:29:07.606 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:29:07.608 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:29:07.611 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:29:07.614 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:29:07.628 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:29:07.633 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 16.7044ms.
+2025-02-07 00:29:07.635 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:29:07.638 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 24.2282ms
+2025-02-07 00:29:07.640 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:29:07.642 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:29:07.644 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - 200 null application/json; charset=utf-8 42.5672ms
+2025-02-07 00:29:07.648 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - null null
+2025-02-07 00:29:07.652 +05:30 [INF] Incoming Request: GET /api/Task/category/1
+2025-02-07 00:29:07.653 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:29:07.655 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:29:07.657 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:29:07.660 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:29:07.667 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:29:07.671 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.1415ms.
+2025-02-07 00:29:07.673 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:29:07.675 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 16.2396ms
+2025-02-07 00:29:07.678 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:29:07.679 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:29:07.680 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - 200 null application/json; charset=utf-8 31.6645ms
+2025-02-07 00:29:15.053 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category - null null
+2025-02-07 00:29:15.059 +05:30 [INF] Incoming Request: GET /api/Task/category
+2025-02-07 00:29:15.063 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:29:15.066 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI)'
+2025-02-07 00:29:15.070 +05:30 [INF] Route matched with {action = "GetAllCategories", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategories() on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:29:15.074 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:29:15.089 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+2025-02-07 00:29:15.096 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 19.9653ms.
+2025-02-07 00:29:15.100 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagementAPI.Models.Category, TaskManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-07 00:29:15.103 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI) in 30.5634ms
+2025-02-07 00:29:15.105 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI)'
+2025-02-07 00:29:15.107 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:29:15.108 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category - 200 null application/json; charset=utf-8 54.666ms
+2025-02-07 00:29:43.734 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5144/api/Task/category - null null
+2025-02-07 00:29:43.738 +05:30 [INF] Incoming Request: OPTIONS /api/Task/category
+2025-02-07 00:29:43.741 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:29:43.748 +05:30 [INF] Outgoing Response: 204
+2025-02-07 00:29:43.751 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5144/api/Task/category - 204 null null 16.5323ms
+2025-02-07 00:29:43.756 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5144/api/Task/category - application/json 22
+2025-02-07 00:29:43.763 +05:30 [INF] Incoming Request: POST /api/Task/category
+2025-02-07 00:29:43.766 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:29:43.767 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.AddCategory (TaskManagementAPI)'
+2025-02-07 00:29:43.776 +05:30 [INF] Route matched with {action = "AddCategory", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddCategory(TaskManagementAPI.DTOs.CategoryDto) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:29:43.863 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.AddCategory (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:29:44.307 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[@p0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Categories] ([Name])
+OUTPUT INSERTED.[Id]
+VALUES (@p0);
+2025-02-07 00:29:44.402 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.AddCategory (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 535.9083ms.
+2025-02-07 00:29:44.406 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:29:44.466 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.AddCategory (TaskManagementAPI) in 684.9367ms
+2025-02-07 00:29:44.470 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.AddCategory (TaskManagementAPI)'
+2025-02-07 00:29:44.472 +05:30 [INF] Outgoing Response: 201
+2025-02-07 00:29:44.474 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5144/api/Task/category - 201 null application/json; charset=utf-8 718.2586ms
+2025-02-07 00:30:46.068 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5144/api/Task - null null
+2025-02-07 00:30:46.085 +05:30 [INF] Incoming Request: OPTIONS /api/Task
+2025-02-07 00:30:46.089 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:30:46.091 +05:30 [INF] Outgoing Response: 204
+2025-02-07 00:30:46.094 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5144/api/Task - 204 null null 25.4486ms
+2025-02-07 00:30:46.114 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5144/api/Task - application/json 89
+2025-02-07 00:30:46.124 +05:30 [INF] Incoming Request: POST /api/Task
+2025-02-07 00:30:46.126 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:30:46.129 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI)'
+2025-02-07 00:30:46.140 +05:30 [INF] Route matched with {action = "Create", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(TaskManagementAPI.DTOs.TaskDto) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:30:46.174 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:30:46.209 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@__taskDto_CategoryId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__taskDto_CategoryId_0
+2025-02-07 00:30:46.286 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Tasks] ([CategoryId], [Description], [IsCompleted], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2025-02-07 00:30:46.301 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 123.3495ms.
+2025-02-07 00:30:46.312 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'TaskManagementAPI.Models.Task'.
+2025-02-07 00:30:46.319 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI) in 172.7755ms
+2025-02-07 00:30:46.326 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.Create (TaskManagementAPI)'
+2025-02-07 00:30:46.328 +05:30 [INF] Outgoing Response: 201
+2025-02-07 00:30:46.330 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5144/api/Task - 201 null application/json; charset=utf-8 215.4069ms
+2025-02-07 00:30:46.397 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1002 - null null
+2025-02-07 00:30:46.402 +05:30 [INF] Incoming Request: GET /api/Task/category/1002
+2025-02-07 00:30:46.405 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:30:46.406 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:30:46.408 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:30:46.413 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:30:46.421 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:30:46.425 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.5868ms.
+2025-02-07 00:30:46.427 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:30:46.429 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 17.2975ms
+2025-02-07 00:30:46.432 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:30:46.434 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:30:46.435 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1002 - 200 null application/json; charset=utf-8 37.714ms
+2025-02-07 00:30:46.441 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - null null
+2025-02-07 00:30:46.446 +05:30 [INF] Incoming Request: GET /api/Task/category/1004
+2025-02-07 00:30:46.447 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:30:46.448 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:30:46.449 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:30:46.452 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:30:46.460 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:30:46.463 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.2581ms.
+2025-02-07 00:30:46.465 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:30:46.467 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 15.315ms
+2025-02-07 00:30:46.468 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:30:46.470 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:30:46.472 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - 200 null application/json; charset=utf-8 30.8904ms
+2025-02-07 00:30:46.476 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - null null
+2025-02-07 00:30:46.480 +05:30 [INF] Incoming Request: GET /api/Task/category/1
+2025-02-07 00:30:46.482 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:30:46.484 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:30:46.485 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:30:46.489 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:30:46.498 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:30:46.504 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 12.9311ms.
+2025-02-07 00:30:46.508 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:30:46.512 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 23.7009ms
+2025-02-07 00:30:46.516 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:30:46.518 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:30:46.522 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - 200 null application/json; charset=utf-8 45.3257ms
+2025-02-07 00:30:46.530 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1005 - null null
+2025-02-07 00:30:46.535 +05:30 [INF] Incoming Request: GET /api/Task/category/1005
+2025-02-07 00:30:46.537 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:30:46.539 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:30:46.541 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:30:46.547 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:30:46.554 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:30:46.558 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.6893ms.
+2025-02-07 00:30:46.560 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:30:46.562 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 15.6718ms
+2025-02-07 00:30:46.563 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:30:46.564 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:30:46.566 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1005 - 200 null application/json; charset=utf-8 35.4138ms
+2025-02-07 00:30:55.241 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/1006 - null null
+2025-02-07 00:30:55.244 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category - null null
+2025-02-07 00:30:55.253 +05:30 [INF] Incoming Request: GET /api/Task/1006
+2025-02-07 00:30:55.259 +05:30 [INF] Incoming Request: GET /api/Task/category
+2025-02-07 00:30:55.262 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:30:55.264 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:30:55.266 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetById (TaskManagementAPI)'
+2025-02-07 00:30:55.267 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI)'
+2025-02-07 00:30:55.271 +05:30 [INF] Route matched with {action = "GetById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:30:55.272 +05:30 [INF] Route matched with {action = "GetAllCategories", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategories() on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:30:55.278 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:30:55.282 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:30:55.298 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CategoryId], [t].[Description], [t].[IsCompleted], [t].[Title]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__p_0
+2025-02-07 00:30:55.311 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 25.5376ms.
+2025-02-07 00:30:55.315 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Task'.
+2025-02-07 00:30:55.322 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetById (TaskManagementAPI) in 45.7555ms
+2025-02-07 00:30:55.324 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+2025-02-07 00:30:55.325 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetById (TaskManagementAPI)'
+2025-02-07 00:30:55.329 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 40.9754ms.
+2025-02-07 00:30:55.330 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:30:55.332 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagementAPI.Models.Category, TaskManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-07 00:30:55.334 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/1006 - 200 null application/json; charset=utf-8 92.7954ms
+2025-02-07 00:30:55.336 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI) in 54.2948ms
+2025-02-07 00:30:55.341 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI)'
+2025-02-07 00:30:55.342 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:30:55.343 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category - 200 null application/json; charset=utf-8 99.5214ms
+2025-02-07 00:31:04.662 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5144/api/Task/1006 - null null
+2025-02-07 00:31:04.674 +05:30 [INF] Incoming Request: OPTIONS /api/Task/1006
+2025-02-07 00:31:04.676 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:04.678 +05:30 [INF] Outgoing Response: 204
+2025-02-07 00:31:04.682 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5144/api/Task/1006 - 204 null null 19.9329ms
+2025-02-07 00:31:04.688 +05:30 [INF] Request starting HTTP/1.1 PUT http://localhost:5144/api/Task/1006 - application/json 111
+2025-02-07 00:31:04.691 +05:30 [INF] Incoming Request: PUT /api/Task/1006
+2025-02-07 00:31:04.692 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:04.693 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.Update (TaskManagementAPI)'
+2025-02-07 00:31:04.705 +05:30 [INF] Route matched with {action = "Update", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(Int32, TaskManagementAPI.DTOs.TaskDto) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:04.716 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.Update (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:04.736 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CategoryId], [t].[Description], [t].[IsCompleted], [t].[Title]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__p_0
+2025-02-07 00:31:04.780 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Tasks] SET [CategoryId] = @p0, [Description] = @p1, [IsCompleted] = @p2, [Title] = @p3
+OUTPUT 1
+WHERE [Id] = @p4;
+2025-02-07 00:31:04.794 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.Update (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 73.8847ms.
+2025-02-07 00:31:04.815 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-02-07 00:31:04.819 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.Update (TaskManagementAPI) in 109.3237ms
+2025-02-07 00:31:04.826 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.Update (TaskManagementAPI)'
+2025-02-07 00:31:04.829 +05:30 [INF] Outgoing Response: 204
+2025-02-07 00:31:04.834 +05:30 [INF] Request finished HTTP/1.1 PUT http://localhost:5144/api/Task/1006 - 204 null null 145.4573ms
+2025-02-07 00:31:04.883 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1002 - null null
+2025-02-07 00:31:04.889 +05:30 [INF] Incoming Request: GET /api/Task/category/1002
+2025-02-07 00:31:04.891 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:04.892 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:04.896 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:04.900 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:04.912 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:04.917 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 15.2298ms.
+2025-02-07 00:31:04.921 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:04.924 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 24.9317ms
+2025-02-07 00:31:04.926 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:04.927 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:04.928 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1002 - 200 null application/json; charset=utf-8 45.4122ms
+2025-02-07 00:31:04.934 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - null null
+2025-02-07 00:31:04.936 +05:30 [INF] Incoming Request: GET /api/Task/category/1004
+2025-02-07 00:31:04.937 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:04.938 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:04.939 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:04.943 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:04.949 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:04.954 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.4014ms.
+2025-02-07 00:31:04.956 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:04.958 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 16.4484ms
+2025-02-07 00:31:04.961 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:04.963 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:04.964 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - 200 null application/json; charset=utf-8 30.7734ms
+2025-02-07 00:31:04.968 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - null null
+2025-02-07 00:31:04.972 +05:30 [INF] Incoming Request: GET /api/Task/category/1
+2025-02-07 00:31:04.973 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:04.975 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:04.977 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:04.981 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:04.990 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:04.994 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10.5849ms.
+2025-02-07 00:31:04.996 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:04.998 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 18.0234ms
+2025-02-07 00:31:05.000 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:05.002 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:05.004 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - 200 null application/json; charset=utf-8 35.5736ms
+2025-02-07 00:31:17.782 +05:30 [INF] Request starting HTTP/1.1 OPTIONS http://localhost:5144/api/Task/1006 - null null
+2025-02-07 00:31:17.791 +05:30 [INF] Incoming Request: OPTIONS /api/Task/1006
+2025-02-07 00:31:17.793 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:17.796 +05:30 [INF] Outgoing Response: 204
+2025-02-07 00:31:17.799 +05:30 [INF] Request finished HTTP/1.1 OPTIONS http://localhost:5144/api/Task/1006 - 204 null null 16.8729ms
+2025-02-07 00:31:17.809 +05:30 [INF] Request starting HTTP/1.1 DELETE http://localhost:5144/api/Task/1006 - null null
+2025-02-07 00:31:17.817 +05:30 [INF] Incoming Request: DELETE /api/Task/1006
+2025-02-07 00:31:17.819 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:17.822 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.Delete (TaskManagementAPI)'
+2025-02-07 00:31:17.833 +05:30 [INF] Route matched with {action = "Delete", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:17.842 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.Delete (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:17.869 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Id], [t].[CategoryId], [t].[Description], [t].[IsCompleted], [t].[Title]
+FROM [Tasks] AS [t]
+WHERE [t].[Id] = @__p_0
+2025-02-07 00:31:17.909 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Tasks]
+OUTPUT 1
+WHERE [Id] = @p0;
+2025-02-07 00:31:17.923 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.Delete (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 74.239ms.
+2025-02-07 00:31:17.928 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-02-07 00:31:17.928 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.Delete (TaskManagementAPI) in 88.9984ms
+2025-02-07 00:31:17.930 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.Delete (TaskManagementAPI)'
+2025-02-07 00:31:17.931 +05:30 [INF] Outgoing Response: 204
+2025-02-07 00:31:17.932 +05:30 [INF] Request finished HTTP/1.1 DELETE http://localhost:5144/api/Task/1006 - 204 null null 122.5824ms
+2025-02-07 00:31:17.952 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1002 - null null
+2025-02-07 00:31:17.957 +05:30 [INF] Incoming Request: GET /api/Task/category/1002
+2025-02-07 00:31:17.959 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:17.960 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:17.962 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:17.965 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:17.976 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:17.983 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13.9609ms.
+2025-02-07 00:31:17.986 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:17.988 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 24.2306ms
+2025-02-07 00:31:17.991 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:17.993 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:17.995 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1002 - 200 null application/json; charset=utf-8 42.7194ms
+2025-02-07 00:31:17.999 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - null null
+2025-02-07 00:31:18.001 +05:30 [INF] Incoming Request: GET /api/Task/category/1004
+2025-02-07 00:31:18.003 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:18.004 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:18.006 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:18.012 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:18.025 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:18.034 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 17.2745ms.
+2025-02-07 00:31:18.037 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:18.039 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 28.4752ms
+2025-02-07 00:31:18.042 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:18.047 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:18.050 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - 200 null application/json; charset=utf-8 51.0582ms
+2025-02-07 00:31:18.060 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - null null
+2025-02-07 00:31:18.065 +05:30 [INF] Incoming Request: GET /api/Task/category/1
+2025-02-07 00:31:18.066 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:18.069 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:18.071 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:18.078 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:18.092 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:18.099 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 17.2391ms.
+2025-02-07 00:31:18.104 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:18.106 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 30.2836ms
+2025-02-07 00:31:18.110 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:18.113 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:18.116 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - 200 null application/json; charset=utf-8 55.5214ms
+2025-02-07 00:31:30.840 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - null null
+2025-02-07 00:31:30.846 +05:30 [INF] Incoming Request: GET /api/Task/category/1004
+2025-02-07 00:31:30.847 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:30.849 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:30.851 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:30.854 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:30.868 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:30.872 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 14.9871ms.
+2025-02-07 00:31:30.875 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:30.878 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 24.2316ms
+2025-02-07 00:31:30.880 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:30.882 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:30.884 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - 200 null application/json; charset=utf-8 43.801ms
+2025-02-07 00:31:30.889 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - null null
+2025-02-07 00:31:30.894 +05:30 [INF] Incoming Request: GET /api/Task/category/1
+2025-02-07 00:31:30.895 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:30.896 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:30.898 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:30.902 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:30.909 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:30.913 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.9273ms.
+2025-02-07 00:31:30.916 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:30.918 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 17.4436ms
+2025-02-07 00:31:30.921 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:30.923 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:30.924 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - 200 null application/json; charset=utf-8 34.6167ms
+2025-02-07 00:31:30.982 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - null null
+2025-02-07 00:31:30.991 +05:30 [INF] Incoming Request: GET /api/Task/category/1004
+2025-02-07 00:31:30.993 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:30.994 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:30.997 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:31.010 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:31.025 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:31.035 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 20.1737ms.
+2025-02-07 00:31:31.041 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:31.046 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 38.4525ms
+2025-02-07 00:31:31.051 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:31.053 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:31.054 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - 200 null application/json; charset=utf-8 71.7587ms
+2025-02-07 00:31:31.064 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - null null
+2025-02-07 00:31:31.070 +05:30 [INF] Incoming Request: GET /api/Task/category/1
+2025-02-07 00:31:31.072 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:31.075 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:31.077 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:31.082 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:31.091 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:31.097 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13.3354ms.
+2025-02-07 00:31:31.102 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:31.107 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 25.7515ms
+2025-02-07 00:31:31.109 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:31.110 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - null null
+2025-02-07 00:31:31.112 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:31.115 +05:30 [INF] Incoming Request: GET /api/Task/category/1
+2025-02-07 00:31:31.116 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - 200 null application/json; charset=utf-8 52.4219ms
+2025-02-07 00:31:31.119 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:31.126 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:31.128 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:31.133 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:31.143 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:31.145 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.4937ms.
+2025-02-07 00:31:31.147 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:31.149 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 16.5967ms
+2025-02-07 00:31:31.151 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:31.152 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:31.153 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - 200 null application/json; charset=utf-8 43.0589ms
+2025-02-07 00:31:32.862 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - null null
+2025-02-07 00:31:32.865 +05:30 [INF] Incoming Request: GET /api/Task/category/1004
+2025-02-07 00:31:32.867 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:32.871 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:32.875 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:32.879 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:32.892 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:32.900 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 16.7153ms.
+2025-02-07 00:31:32.905 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:32.909 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 30.0452ms
+2025-02-07 00:31:32.912 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:32.915 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:32.919 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - 200 null application/json; charset=utf-8 57.3252ms
+2025-02-07 00:31:32.926 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - null null
+2025-02-07 00:31:32.933 +05:30 [INF] Incoming Request: GET /api/Task/category/1
+2025-02-07 00:31:32.935 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:32.937 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:32.941 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:32.946 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:32.957 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:32.964 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 14.1701ms.
+2025-02-07 00:31:32.969 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:32.973 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 27.9248ms
+2025-02-07 00:31:32.978 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:32.981 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:32.984 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - 200 null application/json; charset=utf-8 58.003ms
+2025-02-07 00:31:33.578 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - null null
+2025-02-07 00:31:33.582 +05:30 [INF] Incoming Request: GET /api/Task/category/1004
+2025-02-07 00:31:33.583 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:33.585 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:33.587 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:33.591 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:33.597 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:33.602 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10.3814ms.
+2025-02-07 00:31:33.605 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:33.606 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 16.1261ms
+2025-02-07 00:31:33.608 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:33.609 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:33.611 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - 200 null application/json; charset=utf-8 32.8198ms
+2025-02-07 00:31:33.616 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - null null
+2025-02-07 00:31:33.622 +05:30 [INF] Incoming Request: GET /api/Task/category/1
+2025-02-07 00:31:33.623 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:33.624 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:33.625 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:33.628 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:33.636 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:33.639 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.1808ms.
+2025-02-07 00:31:33.641 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:33.642 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 14.2728ms
+2025-02-07 00:31:33.643 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:33.644 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:33.646 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - 200 null application/json; charset=utf-8 29.8931ms
+2025-02-07 00:31:33.882 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1002 - null null
+2025-02-07 00:31:33.888 +05:30 [INF] Incoming Request: GET /api/Task/category/1002
+2025-02-07 00:31:33.889 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:33.892 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:33.897 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:33.899 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:33.909 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:33.916 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 14.03ms.
+2025-02-07 00:31:33.921 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:33.925 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 25.9423ms
+2025-02-07 00:31:33.929 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:33.933 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:33.936 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1002 - 200 null application/json; charset=utf-8 53.7131ms
+2025-02-07 00:31:33.946 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - null null
+2025-02-07 00:31:33.953 +05:30 [INF] Incoming Request: GET /api/Task/category/1004
+2025-02-07 00:31:33.956 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:33.958 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:33.961 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:33.971 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:33.984 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:33.991 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 15.9826ms.
+2025-02-07 00:31:33.995 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:34.001 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 33.8437ms
+2025-02-07 00:31:34.005 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:34.009 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:34.011 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - 200 null application/json; charset=utf-8 64.8646ms
+2025-02-07 00:31:34.022 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - null null
+2025-02-07 00:31:34.036 +05:30 [INF] Incoming Request: GET /api/Task/category/1
+2025-02-07 00:31:34.039 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:34.045 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:34.048 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:34.053 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:34.067 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:34.073 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 16.2084ms.
+2025-02-07 00:31:34.075 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:34.077 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 24.944ms
+2025-02-07 00:31:34.081 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:34.082 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:34.083 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - 200 null application/json; charset=utf-8 61.1175ms
+2025-02-07 00:31:34.454 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1002 - null null
+2025-02-07 00:31:34.462 +05:30 [INF] Incoming Request: GET /api/Task/category/1002
+2025-02-07 00:31:34.464 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:34.467 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:34.470 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:34.476 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:34.487 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:34.495 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 16.8215ms.
+2025-02-07 00:31:34.500 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:34.504 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 28.048ms
+2025-02-07 00:31:34.508 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:34.512 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:34.516 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1002 - 200 null application/json; charset=utf-8 61.9156ms
+2025-02-07 00:31:34.525 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - null null
+2025-02-07 00:31:34.533 +05:30 [INF] Incoming Request: GET /api/Task/category/1004
+2025-02-07 00:31:34.535 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:34.537 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:34.541 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:34.551 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:34.565 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:34.569 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 13.6604ms.
+2025-02-07 00:31:34.574 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:34.578 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 28.5599ms
+2025-02-07 00:31:34.581 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:34.583 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:34.585 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - 200 null application/json; charset=utf-8 59.8214ms
+2025-02-07 00:31:34.590 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - null null
+2025-02-07 00:31:34.594 +05:30 [INF] Incoming Request: GET /api/Task/category/1
+2025-02-07 00:31:34.596 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:34.597 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:34.600 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:34.603 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:34.614 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:34.617 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 11.9311ms.
+2025-02-07 00:31:34.620 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:34.622 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 19.343ms
+2025-02-07 00:31:34.624 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:34.625 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:34.626 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - 200 null application/json; charset=utf-8 36.5818ms
+2025-02-07 00:31:35.254 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - null null
+2025-02-07 00:31:35.258 +05:30 [INF] Incoming Request: GET /api/Task/category/1
+2025-02-07 00:31:35.261 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:35.265 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:35.267 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:35.276 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:35.289 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:35.296 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 16.4779ms.
+2025-02-07 00:31:35.303 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:35.307 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 32.6329ms
+2025-02-07 00:31:35.309 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:35.311 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:35.312 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - 200 null application/json; charset=utf-8 58.6509ms
+2025-02-07 00:31:35.495 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - null null
+2025-02-07 00:31:35.502 +05:30 [INF] Incoming Request: GET /api/Task/category/1
+2025-02-07 00:31:35.505 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:35.507 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:35.510 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:35.517 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:35.531 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:35.537 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 15.3698ms.
+2025-02-07 00:31:35.543 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:35.547 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 31.1825ms
+2025-02-07 00:31:35.552 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:35.555 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:35.558 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - 200 null application/json; charset=utf-8 63.0359ms
+2025-02-07 00:31:38.970 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - null null
+2025-02-07 00:31:38.975 +05:30 [INF] Incoming Request: GET /api/Task/category/1
+2025-02-07 00:31:38.976 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:38.977 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:38.979 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:38.983 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:38.990 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:38.995 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.4813ms.
+2025-02-07 00:31:38.997 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:38.999 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 16.5234ms
+2025-02-07 00:31:39.001 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:39.003 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:39.005 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - 200 null application/json; charset=utf-8 34.7694ms
+2025-02-07 00:31:39.135 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1002 - null null
+2025-02-07 00:31:39.142 +05:30 [INF] Incoming Request: GET /api/Task/category/1002
+2025-02-07 00:31:39.144 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:39.146 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:39.149 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:39.157 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:39.176 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:39.182 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 17.9537ms.
+2025-02-07 00:31:39.185 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:39.187 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 31.4873ms
+2025-02-07 00:31:39.191 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:39.195 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:39.198 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1002 - 200 null application/json; charset=utf-8 63.4859ms
+2025-02-07 00:31:39.221 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - null null
+2025-02-07 00:31:39.233 +05:30 [INF] Incoming Request: GET /api/Task/category/1004
+2025-02-07 00:31:39.235 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:39.236 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:39.238 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:39.243 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:39.254 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:39.254 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1002 - null null
+2025-02-07 00:31:39.261 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 15.9403ms.
+2025-02-07 00:31:39.265 +05:30 [INF] Incoming Request: GET /api/Task/category/1002
+2025-02-07 00:31:39.268 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:39.270 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:39.273 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 30.8998ms
+2025-02-07 00:31:39.275 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:39.277 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:39.279 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:39.281 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:39.284 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:39.285 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - 200 null application/json; charset=utf-8 64.0156ms
+2025-02-07 00:31:39.294 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:39.294 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - null null
+2025-02-07 00:31:39.298 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 11.3627ms.
+2025-02-07 00:31:39.301 +05:30 [INF] Incoming Request: GET /api/Task/category/1
+2025-02-07 00:31:39.303 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:39.304 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:39.306 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 22.1996ms
+2025-02-07 00:31:39.307 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:39.309 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:39.310 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:39.311 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:39.315 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:39.315 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1002 - 200 null application/json; charset=utf-8 61.2837ms
+2025-02-07 00:31:39.320 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:39.322 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - null null
+2025-02-07 00:31:39.325 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.3502ms.
+2025-02-07 00:31:39.328 +05:30 [INF] Incoming Request: GET /api/Task/category/1004
+2025-02-07 00:31:39.331 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:39.332 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:39.333 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 18.8356ms
+2025-02-07 00:31:39.334 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:39.337 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:39.338 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:39.339 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:39.342 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:39.343 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - 200 null application/json; charset=utf-8 48.2699ms
+2025-02-07 00:31:39.348 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:39.354 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.6777ms.
+2025-02-07 00:31:39.357 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:39.359 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 17.457ms
+2025-02-07 00:31:39.363 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:39.365 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:39.367 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - 200 null application/json; charset=utf-8 44.9733ms
+2025-02-07 00:31:39.379 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - null null
+2025-02-07 00:31:39.385 +05:30 [INF] Incoming Request: GET /api/Task/category/1
+2025-02-07 00:31:39.387 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:31:39.389 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:39.392 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:31:39.398 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:31:39.409 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:31:39.413 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 11.9087ms.
+2025-02-07 00:31:39.416 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:31:39.419 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 21.9478ms
+2025-02-07 00:31:39.423 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:31:39.424 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:31:39.426 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - 200 null application/json; charset=utf-8 47.1257ms
+2025-02-07 00:32:50.900 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category - null null
+2025-02-07 00:32:50.914 +05:30 [INF] Incoming Request: GET /api/Task/category
+2025-02-07 00:32:50.917 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:32:50.920 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI)'
+2025-02-07 00:32:50.923 +05:30 [INF] Route matched with {action = "GetAllCategories", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategories() on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:32:50.926 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:32:50.939 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+2025-02-07 00:32:50.944 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 15.8589ms.
+2025-02-07 00:32:50.946 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagementAPI.Models.Category, TaskManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-07 00:32:50.948 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI) in 22.7674ms
+2025-02-07 00:32:50.950 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI)'
+2025-02-07 00:32:50.951 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:32:50.952 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category - 200 null application/json; charset=utf-8 52.4973ms
+2025-02-07 00:33:35.810 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1002 - null null
+2025-02-07 00:33:35.824 +05:30 [INF] Incoming Request: GET /api/Task/category/1002
+2025-02-07 00:33:35.825 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:33:35.828 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:33:35.832 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:33:35.836 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:33:35.857 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:33:35.864 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 25.9448ms.
+2025-02-07 00:33:35.868 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:33:35.870 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 34.7898ms
+2025-02-07 00:33:35.873 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:33:35.874 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:33:35.875 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1002 - 200 null application/json; charset=utf-8 67.644ms
+2025-02-07 00:33:35.887 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - null null
+2025-02-07 00:33:35.891 +05:30 [INF] Incoming Request: GET /api/Task/category/1004
+2025-02-07 00:33:35.892 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:33:35.893 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:33:35.895 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:33:35.899 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:33:35.906 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:33:35.911 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.7201ms.
+2025-02-07 00:33:35.913 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:33:35.915 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 16.7301ms
+2025-02-07 00:33:35.917 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:33:35.918 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:33:35.920 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - 200 null application/json; charset=utf-8 32.3115ms
+2025-02-07 00:33:35.924 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - null null
+2025-02-07 00:33:35.927 +05:30 [INF] Incoming Request: GET /api/Task/category/1
+2025-02-07 00:33:35.929 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:33:35.930 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:33:35.931 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:33:35.935 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:33:35.941 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:33:35.943 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 7.3928ms.
+2025-02-07 00:33:35.946 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:33:35.948 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 14.3399ms
+2025-02-07 00:33:35.952 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:33:35.953 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:33:35.954 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - 200 null application/json; charset=utf-8 30.0054ms
+2025-02-07 00:34:35.743 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category - null null
+2025-02-07 00:34:35.781 +05:30 [INF] Incoming Request: GET /api/Task/category
+2025-02-07 00:34:35.782 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:34:35.783 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI)'
+2025-02-07 00:34:35.787 +05:30 [INF] Route matched with {action = "GetAllCategories", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategories() on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:34:35.792 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:34:35.811 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+2025-02-07 00:34:35.824 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 30.0735ms.
+2025-02-07 00:34:35.828 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagementAPI.Models.Category, TaskManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-07 00:34:35.832 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI) in 40.6603ms
+2025-02-07 00:34:35.835 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI)'
+2025-02-07 00:34:35.837 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:34:35.840 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category - 200 null application/json; charset=utf-8 97.0582ms
+2025-02-07 00:34:37.603 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1002 - null null
+2025-02-07 00:34:37.617 +05:30 [INF] Incoming Request: GET /api/Task/category/1002
+2025-02-07 00:34:37.620 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:34:37.623 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:34:37.627 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:34:37.632 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:34:37.653 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:34:37.659 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 22.5409ms.
+2025-02-07 00:34:37.662 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:34:37.664 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 33.6972ms
+2025-02-07 00:34:37.667 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:34:37.671 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:34:37.672 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1002 - 200 null application/json; charset=utf-8 69.0215ms
+2025-02-07 00:34:37.683 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - null null
+2025-02-07 00:34:37.689 +05:30 [INF] Incoming Request: GET /api/Task/category/1004
+2025-02-07 00:34:37.691 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:34:37.693 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:34:37.695 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:34:37.698 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:34:37.704 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:34:37.708 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 7.6941ms.
+2025-02-07 00:34:37.711 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:34:37.713 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 15.5654ms
+2025-02-07 00:34:37.715 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:34:37.716 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:34:37.718 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1004 - 200 null application/json; charset=utf-8 34.8841ms
+2025-02-07 00:34:37.722 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - null null
+2025-02-07 00:34:37.725 +05:30 [INF] Incoming Request: GET /api/Task/category/1
+2025-02-07 00:34:37.726 +05:30 [INF] CORS policy execution successful.
+2025-02-07 00:34:37.728 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:34:37.730 +05:30 [INF] Route matched with {action = "GetCategoryById", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCategoryById(Int32) on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 00:34:37.733 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 00:34:37.740 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+WHERE [c].[Id] = @__id_0
+2025-02-07 00:34:37.745 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 10.8527ms.
+2025-02-07 00:34:37.748 +05:30 [INF] Executing OkObjectResult, writing value of type 'TaskManagementAPI.Models.Category'.
+2025-02-07 00:34:37.750 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI) in 17.7956ms
+2025-02-07 00:34:37.752 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetCategoryById (TaskManagementAPI)'
+2025-02-07 00:34:37.753 +05:30 [INF] Outgoing Response: 200
+2025-02-07 00:34:37.754 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category/1 - 200 null application/json; charset=utf-8 32.5029ms
+2025-02-07 01:28:57.379 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5144/api/Task/category - null null
+2025-02-07 01:28:57.387 +05:30 [INF] Incoming Request: GET /api/Task/category
+2025-02-07 01:28:57.389 +05:30 [INF] CORS policy execution successful.
+2025-02-07 01:28:57.391 +05:30 [INF] Executing endpoint 'TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI)'
+2025-02-07 01:28:57.394 +05:30 [INF] Route matched with {action = "GetAllCategories", controller = "Task"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCategories() on controller TaskManagementAPI.Controllers.TaskController (TaskManagementAPI).
+2025-02-07 01:28:57.399 +05:30 [INF] Executing action method TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI) - Validation state: "Valid"
+2025-02-07 01:28:57.448 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Categories] AS [c]
+2025-02-07 01:28:57.453 +05:30 [INF] Executed action method TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 50.8205ms.
+2025-02-07 01:28:57.455 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TaskManagementAPI.Models.Category, TaskManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-02-07 01:28:57.457 +05:30 [INF] Executed action TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI) in 58.9458ms
+2025-02-07 01:28:57.460 +05:30 [INF] Executed endpoint 'TaskManagementAPI.Controllers.TaskController.GetAllCategories (TaskManagementAPI)'
+2025-02-07 01:28:57.462 +05:30 [INF] Outgoing Response: 200
+2025-02-07 01:28:57.463 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5144/api/Task/category - 200 null application/json; charset=utf-8 83.8349ms

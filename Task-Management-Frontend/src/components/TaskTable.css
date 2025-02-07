@@ -1,0 +1,41 @@
+/* .task-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    color: black;
+}
+
+.task-table th,
+.task-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.task-table th {
+    background-color: #555;
+    color: white;
+}
+
+.task-table button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.task-table button:hover {
+    color: red;
+} */
+
+
+.MuiTableRow-root:hover {
+    background-color: #d9e1fc;
+    cursor: pointer;
+}
+
+
+.MuiIconButton-root:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}

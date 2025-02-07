@@ -1,0 +1,39 @@
+.sidebar {
+    width: 15%;
+    min-height: 100vh;
+    background-color: #0c0c4a;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* position: fixed; */
+}
+
+.sidebar h2 {
+    color: #b3bfff;
+    font-size: 28px;
+}
+
+.sidebar nav {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sidebar nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar nav a:hover {
+    background-color: #3649b4;
+    border-radius: 5px;
+}
+
+.sidebar nav a svg {
+    margin-right: 10px;
+}
